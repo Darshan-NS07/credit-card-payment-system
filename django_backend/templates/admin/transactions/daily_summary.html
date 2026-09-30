@@ -1,0 +1,46 @@
+{% extends "admin/base_site.html" %}
+
+{% block content %}
+
+<h1>Daily Payment Summary</h1>
+
+<p>
+    Date: <strong>{{ today }}</strong>
+</p>
+
+<table>
+
+    <tr>
+        <th>Total Transactions</th>
+        <td>{{ total_transactions }}</td>
+    </tr>
+
+    <tr>
+        <th>Successful Transactions</th>
+        <td>{{ successful_transactions }}</td>
+    </tr>
+
+    <tr>
+        <th>Failed Transactions</th>
+        <td>{{ failed_transactions }}</td>
+    </tr>
+
+    <tr>
+        <th>Pending Transactions</th>
+        <td>{{ pending_transactions }}</td>
+    </tr>
+
+    <tr>
+        <th>Total Successful Amount</th>
+        <td>₹{{ successful_amount }}</td>
+    </tr>
+
+</table>
+
+<br>
+
+<a href="{% url 'admin:transactions_transaction_changelist' %}">
+    Back to Transactions
+</a>
+
+{% endblock %}
