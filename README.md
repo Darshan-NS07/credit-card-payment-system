@@ -598,3 +598,17 @@ http://127.0.0.1:8001/
 http://127.0.0.1:8001/docs
 ```
 
+
+
+## Screenshots
+
+Screenshots demonstrating the project functionality are available in the `screenshoots` folder.
+
+The screenshots include:
+- Django Admin
+- User management
+- Card management
+- Transaction management
+- Daily transaction summary
+- FastAPI Swagger/API documentation
+- API testing and payment flow
